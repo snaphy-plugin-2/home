@@ -1,0 +1,7 @@
+{
+  "name": "danzHome",
+  "description": "Danz Foods Home Page",
+  "routeExposure": "/danzHome",
+  "activate": true,
+  "pluginDependencies": {}
+}

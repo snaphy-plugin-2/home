@@ -1,0 +1,19 @@
+{
+  "css": {
+    "/danzHome/style/danzHome.css": "danzHomeCss"
+  },
+  "js": {
+    "/danzHome/scripts/routes/danzHome.js": "danzHomeRoute",
+    "/danzHome/scripts/controllers/danzHome.js": "danzHomeController"
+  },
+  "moduleDependencies":{
+
+  },
+  "settings": ["/danzHome/admin-panel-setting.js"],
+  "bodystructure": {
+    "asidebarHook": [],
+    "sidebarHook": [],
+    "headerHook": [],
+    "footerHook":[]
+  }
+}
