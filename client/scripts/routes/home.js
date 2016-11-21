@@ -7,13 +7,14 @@ angular.module($snaphy.getModuleName())
     function ($locationProvider, $stateProvider, $urlRouterProvider) {
       $locationProvider.html5Mode(false);
       //$urlRouterProvider.otherwise('/');
+      var stateName = $snaphy.loadSettings('home', "homeState");
 
       $stateProvider
         //Provide routes in this way..
-        .state('danzHome', {
-          url: '/danzHome',
-          templateUrl: '/danzHome/views/danzHome.html',
-          controller: 'danzHomeControl'
+        .state(stateName, {
+          url: '/' + stateName,
+          templateUrl: '/home/views/home.html',
+          controller: 'homeControl'
         });
 
     }]); //config
