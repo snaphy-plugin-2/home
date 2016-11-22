@@ -43,6 +43,38 @@ angular.module($snaphy.getModuleName())
         };
 
 
+        var inputPluginInitialize = {
+                date : false,
+                select2: false
+        };
+        
+
+        $scope.initializePlugin = function(pluginList){
+            if(inputPluginInitialize){
+                if(pluginList){
+                    if(pluginList.length){
+                        pluginList.forEach(function(pluginName){
+                            if(!inputPluginInitialize[pluginName]){
+                                if(pluginName === "select2"){
+                                    $('.js-select2').select2();
+                                }else if(pluginName === 'datepicker'){
+                                    App.initHelpers(['datepicker']);
+                                }else{
+                                    App.initHelpers([inputPluginInitialize[pluginName]]);
+                                }
+                                inputPluginInitialize[pluginName] = true;
+                            }
+                        });
+                    }
+                }
+            }
+        };
+
+
+
+
+
+
         /**
          * Will initialize the tabular data of tableView
          * Utilizes the concept of memoization and closure
