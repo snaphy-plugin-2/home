@@ -1,0 +1,21 @@
+{
+  "css": {
+    "/home/style/home.css": "homeCss"
+  },
+  "js": {
+    "/home/scripts/assets/sparkline/jquery.sparkline.min.js": "homeSparkline",
+    "/home/scripts/routes/home.js": "homeRoute",
+    "/home/scripts/controllers/home.js": "homeController",
+    "/home/scripts/directives/home.js": "homeDirectives"
+  },
+  "moduleDependencies":{
+
+  },
+  "settings": ["/home/admin-panel-setting.js"],
+  "bodystructure": {
+    "asidebarHook": [],
+    "sidebarHook": ["/home/views/sidebarHook.html"],
+    "headerHook": [],
+    "footerHook":[]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "home",
+  "description": "Snaphy new modified Home Page",
+  "routeExposure": "/home",
+  "activate": false,
+  "pluginDependencies": {
+    "detailView": "1.0.0"
+  }
+}
